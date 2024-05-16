@@ -45,7 +45,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return <RouterProvider basename="/tothepoint_login" router={router} />;
 }
 
 export default App;
