@@ -22,19 +22,19 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/pizza-shop/menu',
+        path: '/menu',
         element: <Menu />,
         loader: menuLoader,
         errorElement: <Error />,
       },
-      { path: '/pizza-shop/cart', element: <Cart /> },
+      { path: '/cart', element: <Cart /> },
       {
-        path: '/pizza-shop/order/new',
+        path: '/order/new',
         element: <CreateOrder />,
         action: createOrderAction,
       },
       {
-        path: '/pizza-shop/order/:orderId',
+        path: '/order/:orderId',
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
